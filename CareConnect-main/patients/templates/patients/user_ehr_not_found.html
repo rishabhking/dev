@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>No EHR Found</title>
+</head>
+<body>
+    <h2>No EHR Found</h2>
+    <p>It seems we do not have an EHR record for you. Please fill in the form below to create one.</p>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
